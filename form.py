@@ -6,7 +6,7 @@ from werkzeug import secure_filename
 
 class ApplicationForm(Form):
     name = StringField('Name', validators=[DataRequired()])
-    email = StringField('Email', validators=[DataRequired(),Email()])
+    email = StringField('Email', validators=[DataRequired(), Email()])
     phone = StringField('Phone')
     city = StringField('City')
     state = StringField('State')
