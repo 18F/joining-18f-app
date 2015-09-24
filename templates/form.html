@@ -1,22 +1,53 @@
 <form method="POST" action="/">
     {{ form.hidden_tag() }}
     <fieldset>
-    {{ form.name.label }} {{ form.name(size=20) }}
-    {{ form.email.label }} {{ form.email() }}
-    {{ form.phone.label }} {{ form.phone() }}
-    {{ form.city.label }} {{ form.city() }}
-    {{ form.state.label }} {{ form.state() }}
-    {{ form.zipcode.label }} {{ form.zipcode() }}
+        <ul>
+            <li>{{ form.name.label }} {{ form.name(size=20) }}</li>
+            <li>{{ form.email.label }} {{ form.email() }}</li>
+            <li>{{ form.phone.label }} {{ form.phone() }}</li>
+            <li>{{ form.city.label }} {{ form.city() }}</li>
+            <li>{{ form.state.label }} {{ form.state() }}</li>
+            <li>{{ form.zipcode.label }} {{ form.zipcode() }}</li>
+        </ul>
     </fieldset>
     <fieldset>
-    {{ form.citizenship.label }} {{ form.citizenship() }}
+        <ul>
+            <li>{{ form.citizenship.label }} {{ form.citizenship() }}</li>
+        </ul>
     </fieldset>
     <fieldset>
-    {{ form.other_skills.label }} {{ form.other_skills() }}
-    {{ form.link1.label }} {{ form.link1() }}
-    {{ form.link2.label }} {{ form.link2() }}
-    {{ form.link3.label }} {{ form.link3() }}
-    {{ form.why_join_18f.label }} {{ form.why_join_18f() }}
+        <ul>
+            <li>{{ form.primary_skillset.label }} {{ form.primary_skillset() }}</li>
+            <li>{{ form.other_skills.label }} {{ form.other_skills() }}</li>
+            <li>{{ form.link1.label }} {{ form.link1() }}</li>
+            <li>{{ form.link2.label }} {{ form.link2() }}</li>
+            <li>{{ form.link3.label }} {{ form.link3() }}</li>
+            <li>{{ form.why_join_18f.label }} {{ form.why_join_18f() }}</li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <ul>
+            <li>{{ form.resume.label }} {{ form.resume() }}</li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <ul>
+            <li>{{ form.fulltime_ok.label }} {{ form.fulltime_ok() }}</li>
+            <li>{{ form.location_pref.label }} {{ form.location_pref() }}</li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <ul>
+            <!-- TODO: Needs JS -->
+            <li>{{ form.is_veteran.label }} {{ form.is_veteran() }}</li>
+            <li>{{ form.veteran_pref_type.label }} {{ form.veteran_pref_type() }}</li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <ul>
+            <li>{{ form.addl_opps.label }} {{ form.addl_opps() }}</li>
+            <li>{{ form.where_they_found_us.label }} {{ form.where_they_found_us() }}</li>
+        </ul>
     </fieldset>
     <input type="submit" value="Go">
 </form>
