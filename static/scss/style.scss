@@ -1,0 +1,101 @@
+// Vendor -------------- //
+
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import 'lib/normalize';
+
+
+// Core -------------- //
+
+@import 'core/grid-settings';
+@import 'core/defaults';
+@import 'core/variables';
+@import 'core/base';
+@import 'core/grid';
+@import 'core/utilities';
+
+
+// Elements -------------- //
+// Styles basic html elements
+
+@import 'elements/typography';
+@import 'elements/list';
+@import 'elements/inputs';
+@import 'elements/buttons';
+@import 'elements/table';
+@import 'elements/figure';
+@import 'elements/labels';
+
+
+// Components -------------- //
+
+@import 'components/skipnav';
+@import 'components/disclaimer';
+@import 'components/sidenav';
+@import 'components/footer';
+@import 'components/forms';
+@import 'components/search';
+@import 'components/alerts';
+@import 'components/accordions';
+
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+
+  li:before {
+    content: "";
+    padding: 0;
+  }
+}
+
+input[type="checkbox"] {
+  position: relative;
+  left: auto;
+}
+
+#main {
+  padding: 25px;
+}
+
+header {
+  border-bottom: 4px solid #1188ff;
+
+  @include clearfix();
+
+  .logo {
+    width: 80px;
+    float: right;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 3em;
+    // color: #1188ff;
+    float: left;
+  }
+}
+
+#join-form {
+  margin: 25px 0;
+
+  ul {
+    width: 800px;
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+
+  label {
+    margin: 0;
+  }
+
+}
+
+
+
+
+

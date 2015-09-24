@@ -58,8 +58,10 @@ target/
 
 settings_local.py
 
-#virtualenv
+# virtualenv
 bin/
 include/
 man/
+
+node_modules/
 
