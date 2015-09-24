@@ -42,7 +42,7 @@ class ApplicationForm(Form):
             ('dc', 'Washington, DC'),
             ('rmt', 'Remote')
         ])
-    is_veteran = RadioField('Are you a Veteran of the U.S. Armed Forces or are you eligible for "derived" preference?',
+    is_veteran = RadioField('Are you a Veteran of the U.S. Armed Forces or are you eligible for "derived" <a target="_blank" href="http://www.opm.gov/StaffingPortal/vetguide.asp#2Types">preference</a>?',
             choices=[('', 'No'), ('yes', 'Yes')])
     veteran_pref_type = RadioField('', choices=[
             ('none', 'No, I do not claim Veterans\' Preference.'),
