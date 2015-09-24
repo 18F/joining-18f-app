@@ -1,4 +1,4 @@
 flask
-flask-testing
+flask-WTF
 gunicorn
 nose
