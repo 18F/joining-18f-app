@@ -10,8 +10,8 @@ class ApplicationForm(Form):
     phone = StringField('Phone')
     city = StringField('City')
     state = StringField('State')
-    zipcode = StringField('Zip Code')
-    citizenship = BooleanField('Verify you are a U.S. Citizen or Green Card holder')
+    zipcode = StringField('ZIP Code')
+    citizenship = BooleanField('Verify that you are a U.S. Citizen or Green Card holder')
     primary_skillset = SelectField('Please indicate your primary skillset. Your response here will be used primarily in assigning reviewers for your application.', choices=[
            ('acquisition_specialist', 'Acquisition Specialist'),
            ('back_end_developer', 'Back End Developer'),
