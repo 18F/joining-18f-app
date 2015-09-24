@@ -14,13 +14,13 @@ class ApplicationForm(Form):
     citizenship = BooleanField('Verify you are a U.S. Citizen or Green Card holder')
     primary_skillset = SelectField('Please indicate your primary skillset. Your response here will be used primarily in assigning reviewers for your application.', choices=[
            ('acquisition_specialist', 'Acquisition Specialist'),
-           ('back_end_developer', 'Back end developer'),
+           ('back_end_developer', 'Back End Developer'),
            ('content_strategist', 'Content Strategist'),
            ('content_writer', 'Content Writer'),
            ('data_architect', 'Data Architect'),
            ('devops_engineer', 'DevOps Engineer'),
-           ('front_end_developer', 'Front end developer'),
-           ('full_stack_developer', 'Full stack developer'),
+           ('front_end_developer', 'Front End Developer'),
+           ('full_stack_developer', 'Full Stack Developer'),
            ('product_lead', 'Product Lead'),
            ('project_or_program_manager', 'Project / Program Manager'),
            ('ux_research_and_design', 'UX Research and Design'),
