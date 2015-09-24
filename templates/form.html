@@ -1,0 +1,22 @@
+<form method="POST" action="/">
+    {{ form.hidden_tag() }}
+    <fieldset>
+    {{ form.name.label }} {{ form.name(size=20) }}
+    {{ form.email.label }} {{ form.email() }}
+    {{ form.phone.label }} {{ form.phone() }}
+    {{ form.city.label }} {{ form.city() }}
+    {{ form.state.label }} {{ form.state() }}
+    {{ form.zipcode.label }} {{ form.zipcode() }}
+    </fieldset>
+    <fieldset>
+    {{ form.citizenship.label }} {{ form.citizenship() }}
+    </fieldset>
+    <fieldset>
+    {{ form.other_skills.label }} {{ form.other_skills() }}
+    {{ form.link1.label }} {{ form.link1() }}
+    {{ form.link2.label }} {{ form.link2() }}
+    {{ form.link3.label }} {{ form.link3() }}
+    {{ form.why_join_18f.label }} {{ form.why_join_18f() }}
+    </fieldset>
+    <input type="submit" value="Go">
+</form>
