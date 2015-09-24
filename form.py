@@ -53,7 +53,7 @@ class ApplicationForm(Form):
             ('xp', '10-point preference for non-compensable disability or Purple Heart (XP).'),
             ('xp2', '10-point preference based on widow/widower or mother of a deceased veteran, or spouse or mother of a disabled veteran (XP).'),
         ])
-    addl_opps = BooleanField('Please also consider me for other employment opportunities within the US government.')
+    interested_in_other_opps = BooleanField('Please also consider me for other employment opportunities within the US government.')
     where_they_found_us = TextAreaField('Where did you learn about 18F?')
 
 
