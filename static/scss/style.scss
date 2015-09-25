@@ -38,10 +38,18 @@
 @import 'components/alerts';
 @import 'components/accordions';
 
-html, body {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 600;
 }
 
 ul {
@@ -53,10 +61,6 @@ ul {
   }
 }
 
-input[type="checkbox"] {
-  position: relative;
-  left: auto;
-}
 
 #main {
   padding: 25px;
@@ -75,26 +79,107 @@ header {
   h1 {
     margin: 0;
     font-size: 3em;
-    // color: #1188ff;
     float: left;
   }
 }
 
-#join-form {
-  margin: 25px 0;
+form, label {
+  max-width: 100%;
+}
 
-  ul {
-    width: 800px;
-    padding: 25px;
-    margin-bottom: 25px;
+#apply {
+
+  form {
+    width: 600px;
+    margin: 40px auto;
+
+    fieldset {
+      width: 100%;
+    }
+
+    ul {
+      width: 100%;
+      padding: 25px 0;
+      // margin-bottom: 25px;
+    }
+
+    label {
+      max-width: 30%;
+      font-weight: 700;
+      margin: 0;
+      display: inline-block;
+    }
+    input {
+      max-width: 70%;
+      display: inline-block;
+    }
+
+    .contact label {
+      width: 150px;
+    }
+
+    .citizenship label {
+      max-width: 100%;
+    }
+
+    .skillset,
+    .resume,
+    .avail-location,
+    .veteran,
+    .additional {
+
+      input,
+      select,
+      textarea {
+        max-width: 95%;
+      }
+
+      label {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      ul li:after {
+        margin-bottom: 30px;
+      }
+    }
+
+    .veteran {
+      padding-top: 20px;
+
+      ul {
+        margin: 0;
+        padding: 10px 0;
+
+        li:after {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .submit {
+      width: 100%;
+      text-align: center;
+
+      input {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+
+  #main {
+    padding: 20px;
   }
 
-  label {
-    margin: 0;
+  header h1 {
+    font-size: 2em;
   }
 
 }
-
 
 
 

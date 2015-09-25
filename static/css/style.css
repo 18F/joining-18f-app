@@ -2333,20 +2333,22 @@ fieldset {
   .usa-accordion-content > *:last-child {
     margin-bottom: 0; }
 
-html, body {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden; }
+body {
+  font-family: "Open Sans", Arial, sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 600; }
 
 ul {
   margin: 0; }
   ul li:before {
     content: "";
     padding: 0; }
-
-input[type="checkbox"] {
-  position: relative;
-  left: auto; }
 
 #main {
   padding: 25px; }
@@ -2367,11 +2369,74 @@ header {
     font-size: 3em;
     float: left; }
 
-#join-form {
-  margin: 25px 0; }
-  #join-form ul {
-    width: 800px;
-    padding: 25px;
-    margin-bottom: 25px; }
-  #join-form label {
-    margin: 0; }
+form, label {
+  max-width: 100%; }
+
+#apply form {
+  width: 600px;
+  margin: 40px auto; }
+  #apply form fieldset {
+    width: 100%; }
+  #apply form ul {
+    width: 100%;
+    padding: 25px 0; }
+  #apply form label {
+    max-width: 30%;
+    font-weight: 700;
+    margin: 0;
+    display: inline-block; }
+  #apply form input {
+    max-width: 70%;
+    display: inline-block; }
+  #apply form .contact label {
+    width: 150px; }
+  #apply form .citizenship label {
+    max-width: 100%; }
+  #apply form .skillset input,
+  #apply form .skillset select,
+  #apply form .skillset textarea,
+  #apply form .resume input,
+  #apply form .resume select,
+  #apply form .resume textarea,
+  #apply form .avail-location input,
+  #apply form .avail-location select,
+  #apply form .avail-location textarea,
+  #apply form .veteran input,
+  #apply form .veteran select,
+  #apply form .veteran textarea,
+  #apply form .additional input,
+  #apply form .additional select,
+  #apply form .additional textarea {
+    max-width: 95%; }
+  #apply form .skillset label,
+  #apply form .resume label,
+  #apply form .avail-location label,
+  #apply form .veteran label,
+  #apply form .additional label {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px; }
+  #apply form .skillset ul li:after,
+  #apply form .resume ul li:after,
+  #apply form .avail-location ul li:after,
+  #apply form .veteran ul li:after,
+  #apply form .additional ul li:after {
+    margin-bottom: 30px; }
+  #apply form .veteran {
+    padding-top: 20px; }
+    #apply form .veteran ul {
+      margin: 0;
+      padding: 10px 0; }
+      #apply form .veteran ul li:after {
+        margin-bottom: 5px; }
+  #apply form .submit {
+    width: 100%;
+    text-align: center; }
+    #apply form .submit input {
+      margin: 0; }
+
+@media (max-width: 800px) {
+  #main {
+    padding: 20px; }
+  header h1 {
+    font-size: 2em; } }
