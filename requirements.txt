@@ -2,3 +2,4 @@ flask
 flask-WTF
 gunicorn
 nose
+Flask-Script

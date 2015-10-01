@@ -5,7 +5,7 @@ The 18F application form
 
 After you've cloned this repo and made a Virtualenv with Python 3.x, run:
     
-    pip install -r requirements.txt
+    ./manage.py update
 
 ## Configuring
 
