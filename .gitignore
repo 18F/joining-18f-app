@@ -57,3 +57,11 @@ docs/_build/
 target/
 
 settings_local.py
+
+# virtualenv
+bin/
+include/
+man/
+
+node_modules/
+

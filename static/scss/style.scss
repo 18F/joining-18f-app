@@ -1,0 +1,186 @@
+// Vendor -------------- //
+
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import 'lib/normalize';
+
+
+// Core -------------- //
+
+@import 'core/grid-settings';
+@import 'core/defaults';
+@import 'core/variables';
+@import 'core/base';
+@import 'core/grid';
+@import 'core/utilities';
+
+
+// Elements -------------- //
+// Styles basic html elements
+
+@import 'elements/typography';
+@import 'elements/list';
+@import 'elements/inputs';
+@import 'elements/buttons';
+@import 'elements/table';
+@import 'elements/figure';
+@import 'elements/labels';
+
+
+// Components -------------- //
+
+@import 'components/skipnav';
+@import 'components/disclaimer';
+@import 'components/sidenav';
+@import 'components/footer';
+@import 'components/forms';
+@import 'components/search';
+@import 'components/alerts';
+@import 'components/accordions';
+
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 600;
+}
+
+ul {
+  margin: 0;
+
+  li:before {
+    content: "";
+    padding: 0;
+  }
+}
+
+
+#main {
+  padding: 25px;
+}
+
+header {
+  border-bottom: 4px solid #1188ff;
+
+  @include clearfix();
+
+  .logo {
+    width: 80px;
+    float: right;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 3em;
+    float: left;
+  }
+}
+
+form, label {
+  max-width: 100%;
+}
+
+#apply {
+
+  form {
+    width: 600px;
+    margin: 40px auto;
+
+    fieldset {
+      width: 100%;
+    }
+
+    ul {
+      width: 100%;
+      padding: 25px 0;
+      // margin-bottom: 25px;
+    }
+
+    label {
+      max-width: 30%;
+      font-weight: 700;
+      margin: 0;
+      display: inline-block;
+    }
+    input {
+      max-width: 70%;
+      display: inline-block;
+    }
+
+    .contact label {
+      width: 150px;
+    }
+
+    .citizenship label {
+      max-width: 100%;
+    }
+
+    .skillset,
+    .resume,
+    .avail-location,
+    .veteran,
+    .additional {
+
+      input,
+      select,
+      textarea {
+        max-width: 95%;
+      }
+
+      label {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      ul li:after {
+        margin-bottom: 30px;
+      }
+    }
+
+    .veteran {
+      padding-top: 20px;
+
+      ul {
+        margin: 0;
+        padding: 10px 0;
+
+        li:after {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .submit {
+      width: 100%;
+      text-align: center;
+
+      input {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+
+  #main {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+}
+
+
+
+
