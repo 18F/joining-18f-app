@@ -1,13 +1,9 @@
-import run
+from tests.base import BaseTest
 import unittest
 
-class Joining18FAppTestCase(unittest.TestCase):
-    def setUp(self):
-        run.app.testing = True
-        self.app = run.app.test_client()
-
+class Joining18FAppTestCase(BaseTest):
     def test_apply(self):
-        r = self.app.get('/')
+        r = self.client.get('/')
         self.assertEqual(r.status_code, 200)
         self.assertRegexpMatches(str(r.data), r'\<form.*')
 
